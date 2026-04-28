@@ -1,0 +1,123 @@
+.provider-form {
+  max-width: 960px;
+}
+
+.provider-form-status {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.provider-form-status--error {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.provider-form-status--success {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.provider-form fieldset {
+  margin: 0 0 1.75rem 0;
+  padding: 0;
+  border: none;
+}
+
+.provider-form legend {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--lc-text);
+  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--lc-brand-soft);
+  width: 100%;
+}
+
+.provider-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .provider-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .provider-form-grid--full {
+    grid-column: 1 / -1;
+  }
+}
+
+.provider-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--lc-text);
+}
+
+.provider-form input {
+  font: inherit;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--lc-border);
+  border-radius: 8px;
+  background: var(--lc-surface);
+  color: var(--lc-text);
+}
+
+.provider-form input:focus {
+  outline: none;
+  border-color: var(--lc-brand);
+  box-shadow: 0 0 0 3px var(--lc-brand-focus);
+}
+
+.provider-form .provider-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.provider-form .provider-form-meta {
+  font-size: 0.85rem;
+  color: var(--lc-text-muted);
+}
+
+.provider-form-loading {
+  color: var(--lc-text-muted);
+  margin-bottom: 1rem;
+}
+
+.provider-form .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.provider-form .btn-primary {
+  background: var(--lc-brand);
+  color: #f9f9f9;
+}
+
+.provider-form .btn-primary:hover:not(:disabled) {
+  background: var(--lc-brand-hover);
+  transform: scale(1.02);
+}
+
+.provider-form .btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}

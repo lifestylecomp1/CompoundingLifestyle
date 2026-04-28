@@ -1,0 +1,52 @@
+/* Lifestyle Compounding brand — colors from official logo (navy, teal, lime) */
+:root {
+  --lc-navy: #001a41;
+  --lc-teal: #008b94;
+  --lc-teal-dark: #00727a;
+  --lc-teal-deep: #006970;
+  --lc-lime: #46d739;
+  --lc-lime-soft: rgba(70, 215, 57, 0.18);
+
+  --lc-bg: #fafcfc;
+  --lc-text: #001a41;
+  --lc-text-muted: #3d5266;
+  --lc-text-subtle: #5c6f7a;
+  --lc-brand: var(--lc-teal);
+  --lc-brand-hover: var(--lc-teal-dark);
+  --lc-brand-soft: rgba(0, 139, 148, 0.12);
+  --lc-brand-focus: rgba(0, 139, 148, 0.28);
+  --lc-dark: var(--lc-navy);
+  --lc-border: #c8dae0;
+  --lc-border-light: #e2eef0;
+  --lc-surface: #ffffff;
+  --lc-sidebar-top: #001a41;
+  --lc-sidebar-mid: #044a52;
+  --lc-sidebar-bottom: #006b72;
+
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--lc-text);
+  background-color: var(--lc-bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--lc-bg);
+  color: var(--lc-text);
+}
+
+#root {
+  min-height: 100vh;
+}

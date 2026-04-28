@@ -1,0 +1,50 @@
+[
+  {
+    "id": "mon-1",
+    "name": "Bremelanotide",
+    "description": "Peptide for sexual health support",
+    "fileName": "Bremelanotide.pdf"
+  },
+  {
+    "id": "mon-2",
+    "name": "GHK-Cu Topical Cream",
+    "description": "Copper peptide topical cream",
+    "fileName": "GHK-CU Topical Cream (1).pdf"
+  },
+  {
+    "id": "mon-3",
+    "name": "Glutathione",
+    "description": "Antioxidant, detox support",
+    "fileName": "Glutathione Monograph.pdf"
+  },
+  {
+    "id": "mon-4",
+    "name": "Lipo-MIC",
+    "description": "Lipotropic injection formulation",
+    "fileName": "Lipo-MICCC.pdf"
+  },
+  {
+    "id": "mon-5",
+    "name": "Myers' Cocktail",
+    "description": "IV nutrient formulation",
+    "fileName": "Myers_ Cocktail.pdf"
+  },
+  {
+    "id": "mon-6",
+    "name": "NAD+",
+    "description": "Cellular energy, anti-aging",
+    "fileName": "NAD+.pdf"
+  },
+  {
+    "id": "mon-7",
+    "name": "Sermorelin",
+    "description": "Growth hormone releasing hormone analog",
+    "fileName": "Sermorelin.pdf"
+  },
+  {
+    "id": "mon-8",
+    "name": "Glutamine, Arginine & L-Carnitine",
+    "description": "Amino acid support — key benefits & uses",
+    "fileName": "Glutamine, Arginine, & L-Carnitine_ Key Benefits & Uses.docx"
+  }
+]
