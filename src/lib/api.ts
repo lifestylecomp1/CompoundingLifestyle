@@ -370,6 +370,26 @@ export async function patchAdminPartner(
   return data.partner as AdminPartnerRow;
 }
 
+export async function createAdminPartner(body: {
+  email: string;
+  name: string;
+  password: string;
+  role: PartnerRole;
+  allowed_features?: string[] | null;
+  allowed_material_ids?: string[] | null;
+}): Promise<AdminPartnerRow> {
+  const token = getToken();
+  if (!token) throw new Error('Not authenticated');
+  const res = await fetch(`${API_BASE}/admin/partners`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || 'Create account failed');
+  return data.partner as AdminPartnerRow;
+}
+
 export async function saveProviderProfile(
   patch: Omit<ProviderProfile, 'updatedAt'>,
 ): Promise<ProviderProfile> {
@@ -388,5 +408,4 @@ export async function saveProviderProfile(
 export function logout() {
   localStorage.removeItem(TOKEN_KEY);
   localStorage.removeItem(PARTNER_KEY);
-  window.location.href = '/login';
 }

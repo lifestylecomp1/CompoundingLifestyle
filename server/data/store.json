@@ -103,6 +103,16 @@
       "role": "admin",
       "allowed_features": null,
       "allowed_material_ids": null
+    },
+    {
+      "id": "be0597dc-a90a-44b7-a4af-2feadd4c7549",
+      "email": "pranavs389@gmail.com",
+      "name": "TestAccountCreation",
+      "password_hash": "$2a$12$5hq6QevheqeSP/tAjlABLO1Pth6szZNt2xvPKNImMRu0Roy62q4jG",
+      "created_at": "2026-05-23T00:12:45.133Z",
+      "role": "provider",
+      "allowed_features": null,
+      "allowed_material_ids": null
     }
   ],
   "material_access": []

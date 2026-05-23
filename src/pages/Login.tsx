@@ -5,12 +5,12 @@ import './Login.css';
 
 export default function Login() {
   const { login, isAuthenticated } = useAuth();
-
-  if (isAuthenticated) return <Navigate to="/" replace />;
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+
+  if (isAuthenticated) return <Navigate to="/" replace />;
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -64,9 +64,6 @@ export default function Login() {
             {loading ? 'Signing in…' : 'Sign in'}
           </button>
         </form>
-        <p className="login-demo">
-          Test accounts (password <code>partner123</code>): admin — admin@lifestyle.test · provider — demo@provider.com · sales rep — rep@example.com
-        </p>
       </div>
     </div>
   );
